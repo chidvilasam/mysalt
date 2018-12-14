@@ -1,0 +1,10 @@
+<html>
+{% if grains['fqdn'] == 'saltminion1' %} 
+<body bgcolor = "#FFFF00">
+{% elif grains['fqdn'] == 'saltminion2' %}
+<body bgcolor = "#00FF00">
+{% endif %}
+{% set var='by Prakash' %}
+<H1>This is the webpage from {{ grains['fqdn'] }} {{ var }}</H1>
+</body>
+</html>

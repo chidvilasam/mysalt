@@ -1,0 +1,2 @@
+
+echo {{ grains['ipv4'] }} > /root/ubuntu.txt
